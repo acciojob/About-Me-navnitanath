@@ -2,95 +2,143 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Personal Profile</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEJ6vLQA8H2MB8JwDZo4AW7P16f/AGXmo28YXwJXiDO8uVeyyWcBoT7Tbp8wG" crossorigin="anonymous">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css"> <!-- Link to custom CSS -->
+  <title>Developer Profile</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f0f2f5;
+      color: #333;
+    }
+
+    .container {
+      display: flex;
+      max-width: 1000px;
+      margin: 40px auto;
+      background: #fff;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .left {
+      width: 40%;
+      background: #fff;
+      padding: 30px;
+      border-right: 1px solid #eee;
+      text-align: center;
+    }
+
+    .left img {
+      width: 120px;
+      height: 120px;
+      border-radius: 100%;
+      object-fit: cover;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .left .info {
+      text-align: left;
+      margin-top: 20px;
+    }
+
+    .info p {
+      margin: 8px 0;
+    }
+
+    .skills {
+      text-align: left;
+      margin-top: 30px;
+    }
+
+    .skills h3 {
+      margin-bottom: 15px;
+      border-bottom: 2px solid #333;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .skill {
+      margin-bottom: 10px;
+    }
+
+    .skill span {
+      font-size: 0.95rem;
+    }
+
+    .bar {
+      height: 8px;
+      background: #e0e0e0;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-top: 5px;
+    }
+
+    .bar-fill {
+      height: 100%;
+      background: #2196f3;
+    }
+
+    .right {
+      width: 60%;
+      padding: 40px 30px;
+    }
+
+    .right h2 {
+      color: #0d47a1;
+      margin-bottom: 20px;
+    }
+
+    .right p {
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+  </style>
 </head>
 <body>
-  <div class="container mt-5">
-    <header class="text-center mb-5">
-      <h1>My Personal Profile</h1>
-    </header>
 
-    <!-- Name Section -->
-    <section id="name">
-      <h2>Name</h2>
-      <p>John Doe</p>
-    </section>
-
-    <!-- Email Section -->
-    <section id="email">
-      <h2>Email</h2>
-      <p>johndoe@example.com</p>
-    </section>
-
-    <!-- Profile Section -->
-    <section id="profile">
-      <h2>Profile</h2>
-      <p>Web Developer and Software Engineer with a passion for creating dynamic, responsive web applications.</p>
-    </section>
-
-    <!-- About Me Section -->
-    <section id="about-me">
-      <h2>About Me</h2>
-      <p>I'm a self-driven, detail-oriented web developer with a focus on creating user-friendly web experiences. I have a passion for learning new technologies and improving my coding skills.</p>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills">
-      <h2>Skills</h2>
-      <div class="row">
-        <div class="col-12 col-md-6">
-          <h5>HTML</h5>
-          <div class="progress">
-            <div class="progress-bar bg-success" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6">
-          <h5>CSS</h5>
-          <div class="progress">
-            <div class="progress-bar bg-info" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6">
-          <h5>JavaScript</h5>
-          <div class="progress">
-            <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6">
-          <h5>Python</h5>
-          <div class="progress">
-            <div class="progress-bar bg-danger" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
-          </div>
-        </div>
+  <div class="container">
+    <div class="left">
+      <img src="https://via.placeholder.com/120" alt="Profile Photo">
+      <div class="info">
+        <p><strong>Name:</strong> Shubham Bhola</p>
+        <p><strong>Profile:</strong> Software Developer</p>
+        <p><strong>Email:</strong> abcdef789@gmail.com</p>
       </div>
 
-      <div class="row mt-4">
-        <div class="col-12 col-md-6">
-          <h5>React</h5>
-          <div class="progress">
-            <div class="progress-bar bg-primary" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
-          </div>
+      <div class="skills">
+        <h3>Skills</h3>
+
+        <div class="skill">
+          <span>REACT, CSS, JAVASCRIPT</span>
+          <div class="bar"><div class="bar-fill" style="width: 95%; background: #2196f3;"></div></div>
         </div>
-        <div class="col-12 col-md-6">
-          <h5>Git</h5>
-          <div class="progress">
-            <div class="progress-bar bg-dark" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
-          </div>
+
+        <div class="skill">
+          <span>NODE.JS, MONGODB</span>
+          <div class="bar"><div class="bar-fill" style="width: 90%; background: #4caf50;"></div></div>
+        </div>
+
+        <div class="skill">
+          <span>C/C++, PYTHON, BATCH</span>
+          <div class="bar"><div class="bar-fill" style="width: 99%; background: #9c27b0;"></div></div>
+        </div>
+
+        <div class="skill">
+          <span>AWS, HADOOP</span>
+          <div class="bar"><div class="bar-fill" style="width: 93%; background: #ff9800;"></div></div>
         </div>
       </div>
-    </section>
+    </div>
+
+    <div class="right">
+      <h2>About me</h2>
+      <p>I am a self-starter with a passion to adapt and evangelise new technologies. I have a passion for software development with a diverse skillset ranging from the MERN stack to a stronghold on data structures and algorithms. I like to tackle complex challenges head-on to deliver technically sound solutions with optimum efficiency.</p>
+      <p>I believe that magic is possible with a blend of imagination, hard work and passion. Most of all, I believe in determination and honest efforts to enhance my skills in order to contribute to the growth of society.</p>
+    </div>
   </div>
 
-  <footer class="text-center mt-5">
-    <p>&copy; 2025 John Doe. All Rights Reserved.</p>
-  </footer>
-
-  <!-- Bootstrap JS and dependencies -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybJh0d8kAtfuV8TzA3pK8fRqn6eq4lEk5o2F6yboT3k7d9foz" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-pzjw8f+ua7Kw1TIq0F6WvYAXO/pP3hsKE+t9T5Cw4f5/d/93H6cYNtkhZtT9//S" crossorigin="anonymous"></script>
 </body>
 </html>
